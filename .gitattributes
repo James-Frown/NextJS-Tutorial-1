@@ -11,4 +11,4 @@ Not using tailwind and rather using react bootstrap
 
 ## step 2
 install react boot strap
-    
+    npm i bootstrap react-bootstrap
