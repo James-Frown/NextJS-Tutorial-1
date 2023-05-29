@@ -1,2 +1,13 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+## step 1
+install next js app:
+    npx create-next-app@latest
+
+#NB
+
+Not using tailwind and rather using react bootstrap
+
+## step 2
+install react boot strap
