@@ -2,7 +2,7 @@
  Learning Next JS, Typescript and usinging react as well
 
 ## Tutorial Link
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fqfer6xMp2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+"https://www.youtube.com/embed/fqfer6xMp2A"
 
 ## step 1
 install next js app:
