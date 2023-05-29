@@ -22,6 +22,8 @@ export const metadata = {
 export default function RootLayout({
   children,
 }: {
+  // special react syntax check root prop
+  // allows you to parse server components to a client component
   children: React.ReactNode
 }) {
   return (
