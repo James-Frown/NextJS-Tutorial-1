@@ -3,7 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // this is the global css & applied to all pages
 import './globals.css'
+
 import { Inter } from 'next/font/google'
+import { Container } from '@/components/bootstrap';
 
 //all fonts are from our own server and it helps with prvacy
 const inter = Inter({ subsets: ['latin'] })
@@ -28,11 +30,10 @@ export default function RootLayout({
     // the layout is where you can put the navbar
     <html lang="en">
       <body className={inter.className}>
-        <div>
-          This div is shared across layouts
-        </div>
-        {children}
-        </body>
+        <Container>
+          {children}
+        </Container>
+      </body>
     </html>
   )
 }
