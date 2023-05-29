@@ -2,6 +2,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 
+//all fonts are from our own server and it helps with prvacy
 const inter = Inter({ subsets: ['latin'] })
 
 // defines the metadata of a webpage
@@ -23,7 +24,12 @@ export default function RootLayout({
     // it is rendered as the childeren in the body tag
     // the layout is where you can put the navbar
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div>
+          This div is shared across layouts
+        </div>
+        {children}
+        </body>
     </html>
   )
 }
