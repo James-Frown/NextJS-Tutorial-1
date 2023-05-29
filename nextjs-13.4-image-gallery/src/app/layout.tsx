@@ -1,3 +1,6 @@
+// import for boostrap styles
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 // this is the global css & applied to all pages
 import './globals.css'
 import { Inter } from 'next/font/google'

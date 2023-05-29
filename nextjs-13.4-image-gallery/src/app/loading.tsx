@@ -1,11 +1,11 @@
 export default function Loading() {
-    return(
+    return (
         <>
-        <div>
-            <h1>
-                Loading...
-            </h1>
-        </div>
+            <div>
+                <h1>
+                    Loading...
+                </h1>
+            </div>
         </>
     );
 }
