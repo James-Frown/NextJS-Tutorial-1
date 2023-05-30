@@ -24,3 +24,6 @@ folder "james"
 page.tsx
 folder "home"
 page,tsx
+
+## How to end npm run dev
+ctrl + c
