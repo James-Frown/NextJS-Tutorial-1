@@ -5,7 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css'
 
 import { Inter } from 'next/font/google'
-import { Container } from '@/components/bootstrap';
+// importing the stlyes and components from bootstrap
+import { Container, SSRProvider } from '@/components/bootstrap';
 
 //all fonts are from our own server and it helps with prvacy
 const inter = Inter({ subsets: ['latin'] })
@@ -30,11 +31,17 @@ export default function RootLayout({
     // This layout wraps the whole application in the home page tsx file
     // it is rendered as the childeren in the body tag
     // the layout is where you can put the navbar
+    // also wrap the container in the ssr rendering componenet provided by bootstrap
+    // also good habit to wrap the contianer in an html <main> tag
     <html lang="en">
       <body className={inter.className}>
-        <Container>
-          {children}
-        </Container>
+        <SSRProvider>
+          <main>
+            <Container className="py-4">
+              {children}
+            </Container>
+          </main>
+        </SSRProvider>
       </body>
     </html>
   )
