@@ -7,6 +7,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 // importing the stlyes and components from bootstrap
 import { Container, SSRProvider } from '@/components/bootstrap';
+import NavBar from './NavBar';
 
 //all fonts are from our own server and it helps with prvacy
 const inter = Inter({ subsets: ['latin'] })
@@ -36,6 +37,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <SSRProvider>
+          <NavBar />
           <main>
             <Container className="py-4">
               {children}
