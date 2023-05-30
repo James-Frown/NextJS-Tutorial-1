@@ -1,6 +1,6 @@
 "use client";
 
-import { Navbar, Container } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 
 export default function NavBar() {
     // bg is background color
@@ -15,7 +15,14 @@ export default function NavBar() {
                     <Navbar.Brand href="/">
                         NextJS Image Gallery
                     </Navbar.Brand>
-                    
+                    <Navbar.Toggle aria-controls="main-navbar" />
+                    <Navbar.Collapse id="main-navbar">
+                        <Nav>
+                            <Nav.Link href="/hello">
+                                Hello
+                            </Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
                 </Container>
             </Navbar>
         </>
