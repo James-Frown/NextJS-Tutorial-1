@@ -1,10 +1,17 @@
 import { UnsplashImage } from "@/models/unsplash-image";
 import Image from "next/image";
+import styles from "./TopicPage.module.css";
+
+// export const revalidate = 0;
 
 // getting the values as props of this pages function
 interface PageProps {
     params: { topic: string },
     // searchParams: { [key: string]: string | string[] | undefined }
+}
+
+export function generateStaticParams() {
+    return ["health", "fitness", "coding"].map(topic => ({topic}));
 }
 
 // getting the content from the url's value
@@ -26,6 +33,7 @@ export default async function Page({ params: { topic } }: PageProps) {
                             height={250}
                             alt={image.description}
                             key={image.urls.raw}
+                            className={styles.image}
                         />
                     ))
                 }
