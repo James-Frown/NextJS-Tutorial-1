@@ -1,9 +1,13 @@
 import SearchPage from "./SearchPage";
 
-export const Metadata = {
+export const metadata = {
     title: "Search - NextJS Image Gallery"
 }
 
 export default function Page() {
-    return <SearchPage />
+    return (
+        <>
+            <SearchPage />
+        </>
+    )
 }
